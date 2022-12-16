@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey Buaya Portfolio | Website</title>
+    <script src="https://kit.fontawesome.com/4ec8526b34.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+    
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+    
+            // Store hash
+            var hash = this.hash;
+    
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myworks">My Works</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#copyright">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Rey Buaya</span><br>From Cebu Philippines</h1>
+            </div>
+        </div>
+    </section>
+
+<!------------------------about----------------------->
+
+    <section id="about">
+        <div class="container reveal">
+            <div class="row">
+                <div class="about-col-1 reveal" data-aos="flip-right">
+                    <!--
+                    <iframe src="https://www.youtube.com/embed/yEVe4Ohv0Co?autoplay=1&mute=1" allow='autoplay'></iframe>
+                    -->
+                    <iframe src="https://www.youtube.com/embed/c_c7tbWNsns?autoplay=1&mute=1" title="Pitch video" allowfullscreen></iframe>
+                </div>
+                <div class="about-col-2 reveal" data-aos="flip-left">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My name is Rey Aaron Buaya, and I recently graduated from the University of Cebu Main Campus 
+                        with a Bachelor of Science in Information Technology. I have always been passionate about technology 
+                        and discovered coding at a young age, which sparked my love for computer programming, web development, 
+                        and video/photo editing. I am highly skilled in these areas and have extensive experience creating 
+                        innovative solutions and solving problems using technology. As a fresh graduate, I am eager to continue 
+                        learning and improving my skills in order to make a meaningful contribution to the field of information 
+                        technology.
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>College - University of Cebu Main Campus</li>
+                                <li><span>2019-2021</span><br>Senior High School - Asian College of Technology Main Campus</li>
+                                <li><span>2017-2019</span><br>High School - Holy Rosary School of Pardo</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML, CSS and JavaScript</li>
+                                <li><span>App Development</span><br>Visual Basic</li>
+                                <li><span>Game Development</span><br>C, C#, C++ and Java</li>
+                                <li><span>Editing</span><br>Adobe Premeier, Photoshop, Illustrator and Filmora</li>
+                                <li><span>Animation</span><br>Adobe Flash & Blender</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2019-2021</span><br>Full Stack Developer, ABC Tech</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------my works----------------------->
+
+<section id="myworks">
+        <div class="container reveal">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work reveal" data-aos="flip-up">
+                    <img src="images/game.png">
+                    <div class="layer">
+                        <h3>Game Development</h3>
+                        <p>
+                            The scope of this sample work is to create a simple 2D game using HTML, CSS, and JavaScript. 
+                            The game is similar to Flappy Bird and the objectives are to demonstrate proficiency in creating 
+                            games using web technologies and to provide a fun experience for the player. The methodology used 
+                            was a combination of HTML, CSS, and JavaScript for the layout, design, and game logic. The game 
+                            allows the player to control a character and navigate through obstacles to score points. When the 
+                            character collides with an obstacle, the game is over and the player's score is displayed. This 
+                            experience allowed me to improve my skills in web development and game design.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=XhDAH6Vc9Qg" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <p class="download-text">Tap to view</p>
+                    </div>
+                </div>
+                <div class="work reveal" data-aos="flip-down">
+                    <img src="images/ui.png">
+                    <div class="layer">
+                        <h3>UX/UI design</h3>
+                        <p>
+                            The goal of this sample project is to design a UX/UI prototype for Julio's Mart, 
+                            a grocery store. The objectives are to create a user-friendly and visually 
+                            appealing design for the store's website and mobile app, as well as to demonstrate 
+                            the design team's ability to create effective UX/UI designs. A user-centered design 
+                            process was used, which included conducting research, creating wireframes and prototypes, 
+                            and incorporating feedback. The end result is a user-friendly and visually appealing design 
+                            with a clean layout and a variety of features to improve the user experience. This experience 
+                            enabled me to improve my UX/UI design skills and contribute to the design team's success.
+                        </p>
+                        <a href="files/MicroHard-IT-Solutions.pdf" download="MicroHard-IT-Solutions" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+                        <p class="download-text">Tap to download</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work reveal" data-aos="flip-down">
+                    <img src="images/design.png">
+                    <div class="layer">
+                        <h3>Logo | Mockup Design</h3>
+                        <p>
+                            The goal of this sample work is to design a logo and mock-up packaging for Espeso Tablea, 
+                            a product made from dried local cocoa beans. The objectives are to create a distinct and 
+                            appealing brand identity for the product as well as to demonstrate the design team's ability 
+                            to create effective branding and packaging designs. Conducting research, defining the brand's 
+                            values and personality, and developing various design concepts were all part of the methodology 
+                            used. The final logo and packaging mock-up is one-of-a-kind and appealing, with a modern and clean 
+                            design that reflects the brand's values and personality. The experience allowed me to hone my skills 
+                            in branding and packaging design while also contributing to the overall success of the company.
+                        </p>
+                        <a href="images/Espeso-Tablea.png" download="Espeso-Tablea" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+                        <p class="download-text">Tap to download</p>
+                    </div>
+                </div>
+                <div class="work reveal" data-aos="flip-down">
+                    <img src="images/animation.png">
+                    <div class="layer">
+                        <h3>2D Animation</h3>
+                        <p>
+                            The goal of this sample project is to make a 2D video animation in Adobe Flash. 
+                            The plot revolves around a bullied student who becomes a summa cum laude, with characters 
+                            based on The Simpsons. The objectives are to demonstrate proficiency in creating 2D animations 
+                            in Adobe Flash as well as to tell a compelling and inspiring story. The characters and backgrounds 
+                            were created in Adobe Flash, and the animation was planned and created using a storyboard. 
+                            The resulting animation tells a well-crafted and engaging story with the help of sound and music. 
+                            I was able to improve my skills in 2D animation and storytelling as a result of this experience.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1yeaFmx_Zh1A0pKxQlavhdC7tln0hWGyz/view" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <p class="download-text">Tap to view</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!---------------------resume-------------------------->
+
+
+<section id="resume">
+    <div class="container reveal">
+        <div class="resume-text">
+            <h1 class="sub-title">Resume</h1>
+            <a href="files/resume.pdf" download="resume">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <p>Download Resume</p>
+            </a>
+        </div>
+        
+        <img src="images/resume.png" alt="" class="img-resume">
+    </div>
+</section>
+
+<!------------------------contact----------------------->
+
+<section id="contact">
+        <div class="container reveal">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>reycrocs@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09674332618</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ReyCrocs"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/reycrocs"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/reycrocs"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i>Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!------------------------scroll to top button----------------------->
+
+<button onclick="topFunction()" id="scroll-top-btn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+<div class="copyright" id="copyright">
+    <p>Rey Aaron Buaya <i class="fa-regular fa-copyright"></i> 2022</p>
+</div>
+
+
+<!------------------------end----------------------->
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("scroll-top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+    }
+
+    window.addEventListener("scroll", reveal);
+    
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwWB0IdO5Ql1KUBAxKbGC4_Y0omUTF-woD-lvJoUgsLS4-NPHd008XZRaMPuBlK-m5F/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
